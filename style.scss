@@ -329,6 +329,9 @@ header {
   header {
     display: none;
   }
+  .about_me .about {
+    width: 343px;
+  }
 
   #menu.active {
     width: 100%;
@@ -380,7 +383,7 @@ header {
             text-decoration: none;
             font-family: sans-serif;
             margin-left: 20px;
-            font-size: 40px;
+            font-size: 26px;
             text-align: left;
             color: #828282;
             transition: 0.4s;
@@ -453,5 +456,21 @@ header {
   }
   .skills .wrapper_programs .programs {
     width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .last_info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about_me p {
+    margin: 16px;
+    width: 202px;
+  }
+  .about_me .about {
+    width: 290px;
   }
 }
