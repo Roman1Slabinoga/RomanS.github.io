@@ -1,0 +1,457 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "font1";
+  src: url("./fonts/Gilroy-Bold.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #828282;
+  margin: 0 auto;
+  nav {
+    width: 100%;
+    height: 100px;
+    ul {
+      display: flex;
+      width: 100%;
+      height: 100px;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        list-style-type: none;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          font-family: sans-serif;
+          color: #828282;
+          transition: 0.3s;
+          &:hover {
+            color: #070707;
+          }
+        }
+      }
+    }
+  }
+}
+
+#menu {
+  display: none;
+}
+
+.main_inf {
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  .name {
+    width: 33%;
+    height: 200px;
+    display: flex;
+    font-size: 25px;
+    color: #070707;
+    h1 {
+      width: 200px;
+    }
+  }
+  .description {
+    width: 33%;
+    height: 50px;
+    font-size: 17px;
+    p {
+      width: 154px;
+    }
+  }
+  .language {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    height: 33%;
+    justify-content: flex-end;
+    height: 100px;
+    transform: rotate(270deg);
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    .rus {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+.main_img {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.about_me {
+  width: 100%;
+  height: 506px;
+  background: #f6f6f6;
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-size: 34px;
+  }
+  .about {
+    width: 411px;
+  }
+  .last {
+    width: 300px;
+  }
+  p {
+    margin: 16px;
+    width: 400px;
+  }
+}
+
+.skills {
+  width: 70%;
+  height: 506px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .desc_skills {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  .wrapper_programs {
+    width: 100%;
+    display: flex;
+    .programs {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      .obj {
+        width: 100%;
+        height: 270px;
+        font-size: 14px;
+        line-height: 17px;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        p {
+          width: 70px;
+          margin: 0 auto;
+          margin-top: 13px;
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio {
+  height: auto;
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  h2 {
+    margin: 0 auto;
+    height: 100px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    font-size: 34px;
+  }
+  .portfolio_wrapper {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    .work {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: center;
+      flex-direction: column;
+      height: auto;
+      img {
+        width: 100%;
+        cursor: pointer;
+        height: auto;
+        transition: 0.5s;
+        &:hover {
+          box-shadow: 0px -3px 14px 0px rgba(0, 0, 0, 0.75);
+        }
+      }
+      a {
+        margin: 20px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 18px;
+        color: black;
+      }
+    }
+  }
+}
+
+.contacts {
+  width: 100%;
+  height: 506px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 34px;
+  }
+  .first_p {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 236px;
+  }
+  button {
+    width: 180px;
+    height: 42px;
+    border-radius: 30px;
+    background: #000;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .social_media {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    img {
+      cursor: pointer;
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .skills {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .skills {
+    height: auto;
+    .wrapper_programs {
+      flex-wrap: wrap;
+      .programs {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main_inf .description {
+    width: 33%;
+    height: 99px;
+    font-size: 17px;
+  }
+  .main_inf .name h1 {
+    width: 200px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 610px) {
+  header {
+    width: 95%;
+  }
+  .main_inf {
+    flex-direction: column;
+    align-items: flex-start;
+    .name {
+      height: 131px;
+    }
+    .description {
+      height: 47px;
+    }
+    .language {
+      justify-content: flex-start;
+      transform: rotate(0deg);
+      height: 23px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    display: none;
+  }
+
+  #menu.active {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    #close {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      justify-content: space-around;
+      right: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin: 30px;
+      span:first-child {
+        height: 3px;
+        background: #828282;
+        width: 90%;
+        position: absolute;
+        transform: rotate(45deg);
+      }
+      span {
+        height: 3px;
+        background: #828282;
+        width: 90%;
+        transform: rotate(135deg);
+      }
+    }
+    nav {
+      width: 60%;
+      height: 80%;
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          margin: 30px;
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            font-family: sans-serif;
+            margin-left: 20px;
+            font-size: 40px;
+            text-align: left;
+            color: #828282;
+            transition: 0.4s;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .language_menu {
+      width: 44%;
+      display: flex;
+      align-items: flex-end;
+      height: 33%;
+      justify-content: flex-end;
+      height: 100%;
+      margin-left: 139px;
+      transform: rotate(270deg);
+      button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 37px;
+      }
+      .rus {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+
+  #burger {
+    margin: 30px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    span {
+      width: 100%;
+      border-radius: 2px;
+      height: 4px;
+      background-color: black;
+    }
+  }
+  .main_inf {
+    justify-content: flex-end;
+    height: 309px;
+    width: 87%;
+    .description {
+      font-size: 15px;
+    }
+    .language {
+      display: none;
+    }
+  }
+  .main_inf .name h1 {
+    width: 200px;
+    font-size: 55px;
+  }
+  .main_img {
+    width: 87%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .skills .wrapper_programs .programs {
+    width: 100%;
+  }
+}
